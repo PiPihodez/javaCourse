@@ -1,3 +1,5 @@
 # Project exclude paths
 /out/
 /src/lesson_03/ComparisonOperators.java
+src/lesson_04/Arrays.java
+src/lesson_04/Сycles.java
