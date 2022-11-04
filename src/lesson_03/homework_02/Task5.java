@@ -16,47 +16,14 @@ public class Task5 {
         System.out.print("Введите номер месяца: ");
         int month = sc.nextInt();
 
-        switch (month) {
-            case (1):
-                System.out.println("Зима");
-                break;
-            case (2):
-                System.out.println("Зима");
-                break;
-            case (3):
-                System.out.println("Весна");
-                break;
-            case (4):
-                System.out.println("Весна");
-                break;
-            case (5):
-                System.out.println("Весна");
-                break;
-            case (6):
-                System.out.println("Лето");
-                break;
-            case (7):
-                System.out.println("Лето");
-                break;
-            case (8):
-                System.out.println("Лето");
-                break;
-            case (9):
-                System.out.println("Осень");
-                break;
-            case (10):
-                System.out.println("Осень");
-                break;
-            case (11):
-                System.out.println("Осень");
-                break;
-            case (12):
-                System.out.println("Зима");
-                break;
-            default:
-                System.out.println("Неправльное число");
-                break;
-        }
+        if (month == 12  || month == 1 || month == 2) {
+            System.out.println("Зима");
+        } else if (month >= 3 && month < 6) {
+            System.out.println("Весна");
+        } else if (month >= 6 && month < 9) {
+            System.out.println("Лето");
+        } else if (month >= 9 && month < 12)
+            System.out.println("Осень");
 
     }
 }
