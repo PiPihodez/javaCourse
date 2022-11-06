@@ -1,4 +1,5 @@
 package lesson_04.homework_03;
+
 /*Вывести на экран таблицу умножения 10х10 используя цикл while.
 Числа разделить пробелом.
 
@@ -14,4 +15,20 @@ package lesson_04.homework_03;
 9 18 27 36 45 54 63 72 81 90
 10 20 30 40 50 60 70 80 90 100*/
 public class CyclesTask5 {
+    public static void main(String[] args) {
+        int a = 1;
+        int b = 1;
+        while (a <= 10) {
+            System.out.print(a + " ");
+            while (b <= 9) {
+                b++;
+                System.out.print(a * b + " ");
+            }
+            a++;
+            b = 1;
+            System.out.println("");
+        }
+    }
+
+
 }
