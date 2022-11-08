@@ -11,11 +11,12 @@ public class ArraysTask7 {
         Scanner sc = new Scanner(System.in);
 
         Integer[] array = new Integer[20];
-        Arrays.sort(array, Collections.reverseOrder());
+
         int a = array.length;
         for (int i = 0; i < array.length; i++) {
             array[i] = sc.nextInt();
         }
+        Arrays.sort(array, Collections.reverseOrder());
         for (int i : array) {
             System.out.println(i + " ");
         }
