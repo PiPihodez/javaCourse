@@ -1,0 +1,23 @@
+package lesson_04.homework_03;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+
+/*Задача: Написать программу, которая вводит с клавиатуры 20 чисел и выводит их в убывающем порядке.*/
+public class ArraysTask7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Integer[] array = new Integer[20];
+        Arrays.sort(array, Collections.reverseOrder());
+        int a = array.length;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = sc.nextInt();
+        }
+        for (int i : array) {
+            System.out.println(i + " ");
+        }
+    }
+}
