@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class ArraysTask6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] array = new int[20];
-        int min = array.length;
+        int[] array = new int[5];
+        int min = array.length + 1;
         int max = array.length;
         for (int i = 0; i < array.length; i++) {
             array[i] = sc.nextInt();
