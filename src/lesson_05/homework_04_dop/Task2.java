@@ -14,9 +14,8 @@ public class Task2 {
             slova[i] = sc.nextLine();
         }
 
-        int a = slova.length;
-        String aa = null;
-
+        int a = slova[0].length();
+        String aa = slova[0];
         for (int i = 0; i < slova.length; i++) {
             if (slova[i].length() > a) {
                 a = slova[i].length();
@@ -25,8 +24,9 @@ public class Task2 {
         }
         System.out.println(aa + " " + a);
 
-        int b = slova.length;
-        String bb = null;
+
+        int b = slova[0].length();
+        String bb = slova[0];
         for (int i = 0; i < slova.length; i++) {
             if (slova[i].length() < b) {
                 b = slova[i].length();
